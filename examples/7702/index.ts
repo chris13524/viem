@@ -8,6 +8,8 @@ export const account = privateKeyToAccount('0xe205ab858df9ebd5a90b48c55002b680ab
 console.log(account.address)
 // cast rpc anvil_setBalance 0xd0eE455725599bF032bfE9da1dA3923DeC2918C3 10000000000000000
 
+// FIX by bumping the nonce: cast rpc anvil_setNonce 0xd0eE455725599bF032bfE9da1dA3923DeC2918C3 1
+
 export const walletClient = createWalletClient({
     account,
     chain: anvil,
